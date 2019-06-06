@@ -1,0 +1,351 @@
+﻿
+/*! CSS Used from: https://localhost:44361/Content/bootstrap.css */
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+nav {
+    display: block;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 16px;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+    a:hover {
+        color: #0056b3;
+    }
+
+input {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+input {
+    overflow: visible;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: 40px;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+
+.container-fluid {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-4 {
+    position: relative;
+    width: 38%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+    .col-md-4 {
+        -ms-flex: 0 0 33.333333%;
+        -webkit-box-flex: 0;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+.openbtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    padding-right: 15px;
+    padding-top: 8px;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+}
+
+.dropdown {
+    position: relative;
+}
+
+
+
+.nav-link {
+    display: block;
+    padding: 8px 16px;
+    padding: 0.5rem 1rem;
+    color: antiquewhite !important;
+}
+
+    .nav-link:hover, .nav-link:focus {
+        text-decoration: none;
+        color: lightslategrey !important;
+    }
+
+.navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 8px 16px;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+    .navbar-nav .nav-link {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+@media (min-width: 576px) {
+    .navbar-expand-sm {
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -ms-flex-pack: start;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        text-align: center;
+    }
+
+        .navbar-expand-sm .navbar-nav {
+            -ms-flex-direction: row;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            flex-direction: row;
+        }
+
+            .navbar-expand-sm .navbar-nav .nav-link {
+                padding-right: 0.5rem;
+                padding-left: 0.5rem;
+            }
+}
+
+.bg-custom {
+    background-color: #212529 !important;
+}
+
+.justify-content-center {
+    -ms-flex-pack: center !important;
+    -webkit-box-pack: center !important;
+    justify-content: center !important;
+}
+
+@media print {
+    *, *:before, *:after {
+        text-shadow: none !important;
+        box-shadow: none !important;
+    }
+
+    a:not(.btn) {
+        text-decoration: underline;
+    }
+
+    body {
+        min-width: 992px !important;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
+/*! CSS Used from: Embedded ; media=screen */
+@media screen {
+    html {
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    }
+
+    body {
+        color: rgb(255, 255, 255);
+        background-color: rgb(31, 34, 35);
+    }
+
+    a {
+        color: rgb(66, 211, 255);
+        -webkit-text-decoration-color: initial;
+        text-decoration-color: initial;
+        background-color: transparent;
+    }
+
+        a:hover {
+            color: rgb(126, 238, 255);
+        }
+
+    .dropdown .dropbtn {
+        border-color: initial;
+        outline-color: initial;
+        color: rgb(66, 211, 255);
+        background-color: rgb(46, 48, 51);
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: rgb(72, 75, 79);
+        color: rgb(126, 238, 255);
+    }
+
+    .dropdown-content {
+        background-color: rgb(34, 36, 38);
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px 0px;
+    }
+
+        .dropdown-content a {
+            color: rgb(255, 255, 255);
+            -webkit-text-decoration-color: initial;
+            text-decoration-color: initial;
+        }
+
+            .dropdown-content a:hover {
+                background-color: rgb(44, 47, 48);
+            }
+
+    .nav-link:hover, .nav-link:focus {
+        -webkit-text-decoration-color: initial;
+        text-decoration-color: initial;
+    }
+
+    .bg-custom {
+        background-color: rgb(46, 48, 51) !important;
+    }
+}
