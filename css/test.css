@@ -458,7 +458,7 @@ h1 {
         }
 
 .pageHeader {
-    background-image: url('img/bg1.JPG');
+    background-image: url('../img/bg1.JPG');
 }
 
 .headerText {
