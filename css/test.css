@@ -498,84 +498,19 @@ h1 {
 
 
 #skills {
-    padding: 50px;
-    background-color: rgb(46, 48, 51);
-    margin: 25px 100px auto 100px;
+    background-color: rgb(46, 48, 51);  
 }
 
-    #skills .skills-content {
+    #skills .skills-graph {
         margin: auto;
-        width: 50%;
+        width: 60%;
     }
-
-    #skills h2 {
-        text-align: left;
-        font-size: 26px;
-        font-weight: 100;
-    }
-
-    #skills .skill-list {
-        text-align: center;
-    }
-
-    #skills .difficulty {
-        text-align: center;
-        margin-left: 200px;
-        position: absolute;
-    }
-
-        #skills .difficulty li {
-            display: inline;
-            list-style-type: none;
-            font-size: larger;
-            font-style: italic;
-            padding: 40px;
-            padding-bottom: 501px;
-            padding-top: 0px;
-            border-left: thick solid;
-            margin-left: 14px;
-        }
-
-#right-col {
-    border-right: thick solid;
+#img{
+ 
+   width: 100%;
+   height: auto;
+ 
 }
-
-.skills .difficulty ul {
-    margin-bottom: 0px;
-}
-
-
-#right-col {
-    border-right: thick solid;
-}
-
-
-
-.bargraph {
-    list-style: none;
-    padding: 20px 20px 20px 20px;
-    width: 721px;
-    border-bottom-color: inherit;
-    border-bottom: thick solid;
-}
-
-ul.bargraph li {
-    height: 38px;
-    color: white;
-    text-align: left;
-    font-style: italic;
-    font-weight: bolder;
-    font-size: 16px;
-    line-height: 35px;
-    padding: 0px 10px;
-    margin-bottom: 5px;
-}
-
-
-    ul.bargraph li.green {
-        background: #97B546;
-    }
-
 #Python {
     width: 460px;
 }

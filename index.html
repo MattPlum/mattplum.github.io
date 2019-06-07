@@ -2,7 +2,9 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <title>Matthew Lee Website</title>
     <link href="css/test.css" rel="stylesheet" />
     <script src="js/JavaScript.js"></script>
@@ -59,34 +61,8 @@
         <!-- Skills -->
         <section id="skills" class="section">
             <h1 class="subtopic">Skills</h1>
-            <div class="skills-content">
-                <!-- X-axis Difficulty -->
-                <div class="difficulty">
-                    <ul>
-                        <li>Beginner</li>
-                        <li>Familiar</li>
-                        <li id="right-col">Proficient</li>
-
-                    </ul>
-                </div>
-                <h2>Coding</h2>
-                <div class="skill-list">
-                    <ul class="bargraph">
-                        <li id="Java" class="greenblue">Java</li>
-                        <li id="CSharp" class="greenbright">C#</li>
-                        <li id="Python" class="green">Python</li>
-                        <li id="SQL" class="blue">SQL</li>
-                    </ul>
-                </div>
-                <h2>Web Development</h2>
-                <div class="skill-list">
-                    <ul class="bargraph">
-                        <li id="HTML" class="greenblue">HTML</li>
-                        <li id="CSS" class="greenbright">CSS</li>
-                        <li id="JS" class="green">JS</li>
-                        <li id="PHP" class="blue">PHP</li>
-                    </ul>
-                </div>
+            <div class="skills-graph">
+                <img id="img" src="img/skills_graph.png">
             </div><!-- End skills-content -->
         </section>
 
