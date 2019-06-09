@@ -658,3 +658,12 @@ a.btn.disabled, fieldset:disabled a.btn {
 .footer {
     padding: 40px;
 }
+#likebtn{
+    text-align:center;
+}
+#aboutmeimg{
+    width:30%;
+    display:block;
+    margin:auto;
+    border:5px solid #0056b3;
+}

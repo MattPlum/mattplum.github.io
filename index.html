@@ -18,6 +18,8 @@
     <link href="css/test.css" rel="stylesheet" />
     <script src="js/JavaScript.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="kudosplease-min.css">
+    <script src="kudosplease-min.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -55,15 +57,21 @@
         <!-- About Me section -->
         <section id="about" class="section">
             <div class="about-content">
-                <h1 class="subtopic">About Me</h1>
+                <row>
+                   
+                    <h1 class="subtopic">About Me</h1>
+                </row>                    
                 <p>
-                    As a highly inquisitive individual I am passionate about learning 
-                    and working with different kinds of software. My background involves 
-                    extensive software projects that I have worked on independently as well 
-                    as in team-oriented environments. I enjoy working on projects with 
-                    new and exciting technologies so that I may gain experience in the field 
-                    and share what I know with others. 
-                </p>
+                        As a highly inquisitive individual I am passionate about learning
+                        and working with different kinds of software. My background involves
+                        extensive software projects that I have worked on independently as well
+                        as in team-oriented environments. I enjoy working on projects with
+                        new and exciting technologies so that I may gain experience in the field
+                        and share what I know with others.
+                    </p>
+            </div>
+            <div>
+                <img id="aboutmeimg" src="img/aboutme.jpeg" />
             </div>
         </section>
         <!-- Skills -->
@@ -157,6 +165,15 @@
                     </li>
                 </ul>
             </div>
+            <div id="likebtn">
+                <!-- LikeBtn.com BEGIN -->
+                <span class="likebtn-wrapper" data-theme="sku" data-white_label="true" data-identifier="item_1" data-dislike_enabled="false"></span>
+                <script>(function (d, e, s) { if (d.getElementById("likebtn_wjs")) return; a = d.createElement(e); m = d.getElementsByTagName(e)[0]; a.async = 1; a.id = "likebtn_wjs"; a.src = s; m.parentNode.insertBefore(a, m) })(document, "script", "//w.likebtn.com/js/w/widget.js");</script>
+                <!-- LikeBtn.com END -->
+            </div>
+
+  
+
         </footer>
 
     </form>
