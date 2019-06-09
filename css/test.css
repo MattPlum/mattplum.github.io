@@ -484,7 +484,7 @@ h1 {
 
 .section {
     padding: 50px;
-    margin: 25px 100px auto 100px;
+    width:auto;
 }
 
 #about {
