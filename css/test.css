@@ -667,13 +667,12 @@ a.btn.disabled, fieldset:disabled a.btn {
     margin:auto;
     border:5px solid #0056b3;
 }
+div .fortune_cookie{
 
+}
 .fortune_cookie:hover {
-    display:block;
-    margin:auto;
     animation: shake 1s ease infinite;
-    transform-origin: center;
-    transform-box: fill-box;
+
 }
 
 @keyframes shake {
