@@ -1,4 +1,11 @@
-﻿var array = ["'Lee' means plum in Chinese", "I have a shih tzu named Bao"]
+﻿var array = 
+[
+"'Lee' means plum in Chinese", 
+"I have a shih tzu named Bao",
+"My sister is a nurse",
+"I was born in NY Long Island",
+"My mom is also an engineer"
+]
 
 
 $(document).ready(function(){
