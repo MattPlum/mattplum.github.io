@@ -490,7 +490,13 @@ h1 {
 #about {
     background-color: #058fc3;
 }
-
+#aboutmeimg{
+    height:300px;
+    width:auto;
+    max-width:500px;
+    display:block;
+    margin:auto;
+}
 .subtopic {
     text-align: center;
     margin-bottom: 20px;
@@ -661,15 +667,8 @@ a.btn.disabled, fieldset:disabled a.btn {
 #likebtn{
     text-align:center;
 }
-#aboutmeimg{
-    width:30%;
-    display:block;
-    margin:auto;
-    border:5px solid #0056b3;
-}
-div .fortune_cookie{
 
-}
+
 .fortune_cookie:hover {
     animation: shake 1s ease infinite;
 
