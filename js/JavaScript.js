@@ -4,7 +4,10 @@
 "I have a shih tzu named Bao",
 "My sister is a nurse",
 "I was born in NY Long Island",
-"My mom is also an engineer"
+"My mom is an engineer",
+"My dad is a network engineer",
+"Follow my dogs insta, @BaoInBrooklyn",
+
 ]
 
 
