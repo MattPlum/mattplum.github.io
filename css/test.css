@@ -485,14 +485,6 @@ h1 {
     margin-right: auto;
 }
 
-#about{
-    display: flex;
-}
-
-#about-content{
-    flex:1;
-}
-
 div #fortune-cookie{
     text-align:center;
     background-color: rgb(128, 38, 38);
@@ -504,6 +496,7 @@ div #fortune-cookie{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 #aboutmeDiv .subtopic{
