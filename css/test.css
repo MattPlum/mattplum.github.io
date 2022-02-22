@@ -480,10 +480,9 @@ h1 {
 
 .section {
     padding: 50px;
-    width:auto !important;
-}
-
-#about {
+    max-width: 1270px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #about{
@@ -505,8 +504,6 @@ div #fortune-cookie{
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 
 #aboutmeDiv .subtopic{
