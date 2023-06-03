@@ -1,4 +1,5 @@
-﻿var array = 
+﻿
+var array = 
 [
 "'Lee' means plum in Chinese", 
 "I have a shih tzu named Bao",

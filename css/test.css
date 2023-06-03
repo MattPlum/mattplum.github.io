@@ -460,6 +460,8 @@ h1 {
 .headerText {
     padding-bottom: 150px;
 }
+
+
 /*! CSS Used fontfaces */
 
 @font-face {
@@ -520,10 +522,22 @@ div #fortune-cookie{
     background-color: rgb(46, 48, 51);  
 }
 
-    #skills .skills-graph {
+    #skills .skills {
         margin: auto;
-        width: 60%;
+        width: 100%;
+        text-align: center;
     }
+    .skills i {
+        margin-right: 30px;
+    }
+#csharp-icon {
+    transform: scale(2);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) hue-rotate(0deg);
+    position: relative;
+    top: -5px;
+    left: 20px;
+}
+    
 #img{
  
    width: 100%;

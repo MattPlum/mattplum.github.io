@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
@@ -17,7 +16,7 @@
     <title>Matthew Lee Website</title>
     <link href="css/test.css" rel="stylesheet" />
     <script src="js/JavaScript.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/72d0c054fc.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -50,7 +49,7 @@
             <div id="headerText" class="headerText">
                 <h1><b>MATTEW LEE</b></h1>
                 <h2>Computer Information Systems (BS)</h2>
-                <h2>Candidate for MS in Cyber Security</h2>              
+                <h2>Cyber Security (MS)</h2>              
             </div>
         </div>
         <!-- About Me section -->
@@ -76,8 +75,7 @@
                         I started my masters program in the fall of 2021, studying Cyber Security at CCNY in NYC. 
                     </p>
                     <p>
-                        I am currently in my second semester, and looking for a Cyber Security internship postion for the 
-                        Summer of 2022.
+                        I recently graduated from City College of New York with a MS in Cyber Security and am looking for opportunities
                     </p>
                     </p>
                     <div id="fortune-cookie">                   
@@ -122,9 +120,14 @@
         </section>
         <!-- Skills -->
         <section id="skills" class="section">
-            <h1 class="subtopic">Skills</h1>
-            <div class="skills-graph">
-                <img id="img" src="img/skills_graph.png">
+            <div class="skills">
+                <h1 class="subtopic">Skills</h1>
+                <i class="fa-brands fa-python fa-4x fa-fw"></i>
+                <i class="fa-brands fa-java fa-4x fa-fw"></i>
+                <i class="fa-brands fa-js fa-4x fa-fw"></i>
+                <i class="fa-brands fa-github fa-4x fa-fw"></i>
+                <i class="fa-brands fa-react fa-4x fa-fw"></i>
+                <img id="csharp-icon" src="img\csharp.svg" alt="C# Icon" width="32" height="32">
             </div><!-- End skills-content -->
         </section>
 
@@ -132,6 +135,40 @@
         <section id="projects" class="section">
             <h1 class="subtopic">Projects</h1>
             <div class="projects-content">
+                <div class="project">
+                    <h2>Furbo Camera Hack</h2>
+                    <p>
+                        <i>Hacked into my Furbo camera and gained root access </i><br>
+                        In this project I used Burp Suite to find an exploit in my Furbo pet Camera and was able to 
+                        use code injection to sucessfully gain root access to the device. This allowed me to call commands
+                        from my terminal to view the live stream and call functions like tossing a dog treat
+                    </p>
+                    <button class="btn" type="button" onclick="changeVisibility('p2')">
+                        Preview
+                        <div id="p2" class="item">
+                            <!-- gif 2 -->
+                            <img class="gif" src="img/FurboCommands .gif" />                        
+                        </div>
+                    </button>
+                </div>
+                <div class="project">
+                    <h2>OpenAI Steganography</h2>
+                    <p>
+                        <i>Used OpenAi's DALL-E API to generate images for steganography encoding/decoding </i><br/>
+                        I Built a python app using Flask to allow a user to  enter a prompt to generate an image using
+                        DALL-E's API, or upload their own image and enter a secret message. The secret message will then
+                        be encoded into the image using LSB steganography and will be displayed next to the original image to ensure
+                        it is not discernable. Also has functionality for decoding a steganographic message with options for Caesar
+                        and Vigenere Cipher
+                    </p>
+                    <button class="btn" type="button" onclick="changeVisibility('p3')">
+                        Preview
+                        <div id="p3" class="item">
+                            <!-- gif 3-->
+                            <img class="gif" src="img/Steganography.gif" />
+                        </div>
+                    </button>
+                </div>
                 <div class="project">
                     <h2>Platformer Game</h2>
                     <p>
@@ -151,40 +188,6 @@
                         <div id="p1" class="item">
                             <!--gif 1-->
                             <img class="gif" src="img/lead_game_gif.gif" />
-                        </div>
-                    </button>
-                </div>
-                <div class="project">
-                    <h2>Sharepoint Website</h2>
-                    <p>
-                        <i>Worked in an AGILE team to develop a website in Sharepoint for our client. </i><br>
-                        This was done as a Capstone project where we were evaluated on how well we followed the AGILE 
-                        process throughout the semester. Jira was used to organize our sprints as well as to 
-                        create user stories and tasks for each member. 
-                    </p>
-                    <button class="btn" type="button" onclick="changeVisibility('p2')">
-                        Preview
-                        <div id="p2" class="item">
-                            <!-- gif 2 -->
-                            <img class="gif" src="img/website_project.gif" />                        
-                            <div style="font-style:italic; text-align:center">
-                                Website Not Yet Published
-                            </div>
-                        </div>
-                    </button>
-                </div>
-                <div class="project">
-                    <h2>Access Database</h2>
-                    <p>
-                        <i>Built a database using Access for a client. This included a UI to run queries and analyze the database.</i><br/>
-                        This was a Capstone project for the Lerner Business College who requested a platform that could house their data 
-                        and run analysis on it. Worked as part of a team to deliver continuous software to the client.
-                    </p>
-                    <button class="btn" type="button" onclick="changeVisibility('p3')">
-                        Preview
-                        <div id="p3" class="item">
-                            <!-- gif 3-->
-                            <img class="gif" src="img/lerner_project.gif" />
                         </div>
                     </button>
                 </div>
