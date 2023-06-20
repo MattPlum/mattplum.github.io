@@ -593,6 +593,20 @@ ul.bargraph li.blue {
     width: 300px;
 }
 
+.cert{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.completed {
+    color: #36B669;
+}
+
+.in-progress {
+    color: #ffc107;
+}
+
 #projects p{
     font-size: 16px;
     line-height: 1.6;
