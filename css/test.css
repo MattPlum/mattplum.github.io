@@ -257,6 +257,16 @@ h1 {
 .dropdown {
     position: relative;
 }
+.nav-list {
+    list-style-type: disc; /* Use disc bullets */
+    padding-left: 20px; /* Add some left padding for spacing */
+}
+
+/* Style the list items within the navigation menu */
+.nav-item {
+    margin-bottom: 10px; /* Add space between list items */
+}
+
 
 .nav-link {
     display: block;
