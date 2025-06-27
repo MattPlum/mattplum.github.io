@@ -15,12 +15,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
-    padding-right: 18px; /* Add space for scrollbar so content isn't blocked */
+    padding: 0 0 0 0;
     border-bottom: 1px solid #35373b;
     width: 100vw;
     box-sizing: border-box;
     overflow-x: auto;
+    background: #232526;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .container {
@@ -50,6 +53,14 @@ body {
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
+    overflow-x: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-links li {
+    flex: 1 0 auto;
+    min-width: max-content;
 }
 
 .nav-links li a {
@@ -278,8 +289,8 @@ body {
         flex-direction: column;
         align-items: flex-start;
         padding: 0 0 0 0;
-        padding-right: 18px;
         width: 100vw;
+        overflow-x: auto;
     }
     .container {
         flex-direction: column;
@@ -290,9 +301,14 @@ body {
     }
     .nav-links {
         gap: 0.7rem;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         width: 100vw;
+        overflow-x: auto;
         justify-content: flex-start;
+        box-sizing: border-box;
+    }
+    .nav-links li {
+        min-width: max-content;
     }
     .site-title {
         font-size: 1.2rem;
