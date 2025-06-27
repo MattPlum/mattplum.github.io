@@ -1,5 +1,4 @@
-﻿
-var array = 
+﻿var array = 
 [
 "'Lee' means plum in Chinese", 
 "I have a shih tzu named Bao",
@@ -11,15 +10,14 @@ var array =
 
 ]
 
-
-$(document).ready(function(){
-    $('.fortune_cookie').on("click", function(e){
-      $('.active').removeClass('active');
-      $(this).addClass('active');
-      alert(array[Math.floor(Math.random() * array.length)]);
-      console.log(Math.floor(Math.random() * array.length))
-    });
-  });
+document.addEventListener('DOMContentLoaded', function() {
+    var svg = document.querySelector('.fortune-cookie-svg');
+    if (svg) {
+        svg.addEventListener('click', function(e) {
+            alert(array[Math.floor(Math.random() * array.length)]);
+        });
+    }
+});
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
@@ -34,4 +32,4 @@ function changeVisibility(id) {
     } else {
         x.style.display = "none";
     }
-}  
+}
