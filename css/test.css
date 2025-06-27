@@ -257,6 +257,16 @@ h1 {
 .dropdown {
     position: relative;
 }
+.nav-list {
+    list-style-type: disc; /* Use disc bullets */
+    padding-left: 20px; /* Add some left padding for spacing */
+}
+
+/* Style the list items within the navigation menu */
+.nav-item {
+    margin-bottom: 10px; /* Add space between list items */
+}
+
 
 .nav-link {
     display: block;
@@ -591,6 +601,20 @@ ul.bargraph li.blue {
 
 #PHP {
     width: 300px;
+}
+
+.cert{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.completed {
+    color: #36B669;
+}
+
+.in-progress {
+    color: #ffc107;
 }
 
 #projects p{
