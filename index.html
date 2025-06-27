@@ -1,255 +1,146 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141727840-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-141727840-1');
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <meta charset="utf-8" />
-    <title>Matthew Lee Website</title>
-    <link href="css/test.css" rel="stylesheet" />
-    <script src="js/JavaScript.js"></script>
-    <script src="https://kit.fontawesome.com/72d0c054fc.js" crossorigin="anonymous"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Lee | Resume & Portfolio</title>
+    <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <form id="form1" runat="server">
-        <nav class="navbar navbar-expand-sm bg-custom fixed-position justify-content-center">
-            <!-- Navigation Tab -->
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="mailto:mattdouglee@gmail.com"><h1>Email</h1></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="img/Resume_MattLee.pdf"><h1>Resume</h1></a> 
-                </li>
-                <li>
-                    <a href="img/Resume_MattLee.pdf" id="download" class="btn" download><i class="fa fa-download"></i></a>
-                </li>
-            </ul>
-            <!-- Sidebar Navigation -->
-            <div id="btn" onclick="openNav()">&#9776; </div> <!-- sidebar smbol -->
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&raquo;</a> <!--X symbol -->
-                <a href="#top">Home</a>
-                <a href="#about">About Matthew Lee</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact Info</a>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-left">
+                    <a href="#top" class="site-title">Matthew Lee</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="img/Matt_Lee_Resume.pdf" target="_blank" rel="noopener"><i class="fa fa-file-pdf"></i> Resume</a></li>
+                </ul>
             </div>
         </nav>
-        <!-- Page Header -->
-        <div id="top" class="pageHeader">
-            <div id="headerText" class="headerText">
-                <h1><b>MATTEW LEE</b></h1>
-                <h2>Computer Information Systems (BS)</h2>
-                <h2>Cyber Security (MS)</h2>              
+        <section class="hero" id="top">
+            <div class="hero-content">
+                <img src="img/aboutme.jpeg" alt="Matthew Lee" class="profile-img">
+                <div>
+                    <h1>Matthew Lee</h1>
+                    <h2>Computer Information Systems (BS) | Cyber Security (MS)</h2>
+                    <p class="hero-summary">Cyber Security graduate passionate about technology, compliance, and solving new challenges. Seeking opportunities to make a difference in the digital world.</p>
+                    <a href="img/Matt_Lee_Resume.pdf" class="btn" target="_blank"><i class="fa fa-download"></i> Download Resume</a>
+                </div>
             </div>
-        </div>
-        <!-- About Me section -->
-        <section id="about" class="section">
-            <div class="about-content" id="about-content">                 
-                    <h1 class="subtopic">About Me</h1>
-                    <div id="aboutmeDiv">
-                        <img id="aboutmeimg" src="img/aboutme.jpeg" /> 
-                    </div>
-                    <p>
-                        I grew up in Long Island, New York in a family of engineers. My education in technology brought me back to New York,
-                        and I began working in NYC as a QA Testing Consultant at Con Edison. While working there, I discovered that I love
-                        to learn new skills and understand new technologies. I also found a strong interest in working in compliance due
-                        to my natural skills and qualities.
-                        <br><br>
-                        One of the reasons I decided to get into Cyber Security is because of my ability to see things clearly and my understanding
-                        of how important clarity of communication is within an organization. I feel that in Cyber Security, there are always
-                        new challenges popping up with new people and situations. Additionally, cyber attacks against companies have been prevalent,
-                        and I would like to participate in working against cyber threats.
-                    </p>
-                    <p>
-                        After working for two years, I decided to go back to school to get my Masters. 
-                        I started my masters program in the fall of 2021, studying Cyber Security at CCNY in NYC. 
-                    </p>
-                    <p>
-                        I recently graduated from City College of New York with a MS in Cyber Security and am looking for opportunities
-                    </p>
-                    </p>
-                    <div id="fortune-cookie">                   
-                        <h2 class="subtopic">Open this fortune cookie to learn more!</h2>
-                    <svg  width="318" height="305" viewBox="0 0 418 305" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g class="fortune_cookie">
-                        <g id="fortune">
-                        <g id="g4229">
-                        <path id="path4231" d="M297.73 138.473C297.73 138.473 338.072 128.589 390.889 85.5529C390.889 85.5529 415.666 115.548 417.622 159.236C417.622 159.236 343.353 209.688 286.265 214.13C286.265 214.13 308.902 172.484 297.73 138.473" fill="#F7F7F7"/>
-                        </g>
-                        </g>
-                        <g id="cookie">
-                        <g id="g4201">
-                        <path id="path4203" d="M155.121 0.728737C70.8781 1.32474 1.91414 69.8034 0.752806 154.039C-0.199194 223.085 43.8568 281.967 105.451 303.246C109.53 304.655 114.059 303.478 116.889 300.218C127.198 288.341 139.695 272.525 145.953 259.23C150.381 249.818 152.926 222.217 154.378 191.494C154.378 191.494 153.701 102.343 156.189 117.158L156.173 191.494C157.625 222.217 160.17 249.818 164.599 259.23C170.906 272.631 183.558 288.602 193.915 300.511C196.842 303.875 201.513 305.118 205.739 303.699C267.359 283.027 311.755 224.815 311.755 156.234C311.755 69.9741 241.522 0.116737 155.121 0.728737Z" fill="#EAB363"/>
-                        </g>
-                        <g id="g4205">
-                        <path id="path4207" d="M46.5854 256.882C46.5854 256.882 73.9228 294.213 105.923 298.451C120.589 298.451 117.923 279.867 105.923 279.867C95.2561 279.867 53.4321 264.87 46.5854 256.882Z" fill="#8C5E28"/>
-                        </g>
-                        <g id="g4209">
-                        <path id="path4211" d="M262.594 256.882C262.594 256.882 235.257 294.213 203.257 298.451C189.923 298.451 191.257 279.867 203.257 279.867C213.923 279.867 255.747 264.87 262.594 256.882" fill="#8C5E28"/>
-                        </g>
-                        <g id="g4213">
-                        <path id="path4215" d="M34.8625 71.5333C34.8625 71.5333 83.9692 7.95728 156.247 7.95728C228.525 7.95728 278.408 71.5333 278.408 71.5333C278.408 71.5333 168.861 -45.8374 34.8625 71.5333Z" fill="#8C5E28"/>
-                        </g>
-                        <g id="g4217">
-                        <path id="path4219" d="M156.146 71.5333C156.146 71.5333 114.547 67.6213 125.333 127.284C132.609 167.539 144.091 200.667 150.794 217.961C151.827 209.693 152.673 200.737 153.362 191.495C153.362 191.495 152.294 102.343 156.214 117.159L156.189 191.493C157.023 202.709 158.09 213.503 159.443 223.153C165.582 207.977 178.871 172.032 186.959 127.284C197.745 67.6213 156.146 71.5333 156.146 71.5333Z" fill="#E2942D"/>
-                        </g>
-                        <g id="g4221">
-                        <path id="path4223" d="M106.263 101.854C106.263 101.854 117.022 48.1994 156.146 48.1994C195.27 48.1994 202.117 101.854 202.117 101.854C202.117 101.854 248.087 95.4154 245.153 75.0274C242.218 54.6381 186.467 25.6647 156.146 25.6647C125.825 25.6647 68.118 44.9807 67.1394 68.5887C66.162 92.1967 92.57 97.5621 106.263 101.854Z" fill="#F4CD9A"/>
-                        </g>
-                        <g id="g4225">
-                        <path id="path4227" d="M31.6021 235.527C31.6021 235.527 3.56347 195.099 5.51947 159.235C7.47547 123.372 18.5115 107.071 18.5115 107.071C18.5115 107.071 -2.95653 152.063 31.6021 235.527" fill="#8C5E28"/>
-                        </g>
-                        <g id="g4249">
-                        <path id="path4251" d="M278.31 234.527C278.31 234.527 306.349 194.099 304.393 158.235C302.437 122.372 291.401 106.071 291.401 106.071C291.401 106.071 312.869 151.063 278.31 234.527Z" fill="#8C5E28"/>
-                        </g>
-                        </g>
-                        </g>
-                        </svg>                                                     
-                    </div>
-            </div>           
         </section>
-        <!-- Skills -->
+    </header>
+    <main>
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>I grew up in Long Island, New York in a family of engineers. My education in technology brought me back to New York, and I began working in NYC as a QA Testing Consultant at Con Edison. While working there, I discovered that I love to learn new skills and understand new technologies. I also found a strong interest in working in compliance due to my natural skills and qualities.</p>
+            <p>One of the reasons I decided to get into Cyber Security is because of my ability to see things clearly and my understanding of how important clarity of communication is within an organization. I feel that in Cyber Security, there are always new challenges popping up with new people and situations. Additionally, cyber attacks against companies have been prevalent, and I would like to participate in working against cyber threats.</p>
+            <p>After working for two years, I decided to go back to school to get my Masters. I started my masters program in the fall of 2021, studying Cyber Security at CCNY in NYC. I recently graduated from City College of New York with a MS in Cyber Security and am looking for opportunities.</p>
+            <div class="fortune-cookie-block">
+                <h3>Open this fortune cookie to learn more!</h3>
+                <div class="fortune-cookie-svg">
+                    <!-- SVG fortune cookie from your original site -->
+                    <svg width="160" height="150" viewBox="0 0 318 305" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g class="fortune_cookie">
+                            <g id="fortune">
+                                <g id="g4229">
+                                    <path id="path4231" d="M297.73 138.473C297.73 138.473 338.072 128.589 390.889 85.5529C390.889 85.5529 415.666 115.548 417.622 159.236C417.622 159.236 343.353 209.688 286.265 214.13C286.265 214.13 308.902 172.484 297.73 138.473" fill="#F7F7F7"/>
+                                </g>
+                            </g>
+                            <g id="cookie">
+                                <g id="g4201">
+                                    <path id="path4203" d="M155.121 0.728737C70.8781 1.32474 1.91414 69.8034 0.752806 154.039C-0.199194 223.085 43.8568 281.967 105.451 303.246C109.53 304.655 114.059 303.478 116.889 300.218C127.198 288.341 139.695 272.525 145.953 259.23C150.381 249.818 152.926 222.217 154.378 191.494C154.378 191.494 153.701 102.343 156.189 117.158L156.173 191.494C157.625 222.217 160.17 249.818 164.599 259.23C170.906 272.631 183.558 288.602 193.915 300.511C196.842 303.875 201.513 305.118 205.739 303.699C267.359 283.027 311.755 224.815 311.755 156.234C311.755 69.9741 241.522 0.116737 155.121 0.728737Z" fill="#EAB363"/>
+                                </g>
+                                <g id="g4205">
+                                    <path id="path4207" d="M46.5854 256.882C46.5854 256.882 73.9228 294.213 105.923 298.451C120.589 298.451 117.923 279.867 105.923 279.867C95.2561 279.867 53.4321 264.87 46.5854 256.882Z" fill="#8C5E28"/>
+                                </g>
+                                <g id="g4209">
+                                    <path id="path4211" d="M262.594 256.882C262.594 256.882 235.257 294.213 203.257 298.451C189.923 298.451 191.257 279.867 203.257 279.867C213.923 279.867 255.747 264.87 262.594 256.882" fill="#8C5E28"/>
+                                </g>
+                                <g id="g4213">
+                                    <path id="path4215" d="M34.8625 71.5333C34.8625 71.5333 83.9692 7.95728 156.247 7.95728C228.525 7.95728 278.408 71.5333 278.408 71.5333C278.408 71.5333 168.861 -45.8374 34.8625 71.5333Z" fill="#8C5E28"/>
+                                </g>
+                                <g id="g4217">
+                                    <path id="path4219" d="M156.146 71.5333C156.146 71.5333 114.547 67.6213 125.333 127.284C132.609 167.539 144.091 200.667 150.794 217.961C151.827 209.693 152.673 200.737 153.362 191.495C153.362 191.495 152.294 102.343 156.214 117.159L156.189 191.493C157.023 202.709 158.09 213.503 159.443 223.153C165.582 207.977 178.871 172.032 186.959 127.284C197.745 67.6213 156.146 71.5333 156.146 71.5333Z" fill="#E2942D"/>
+                                </g>
+                                <g id="g4221">
+                                    <path id="path4223" d="M106.263 101.854C106.263 101.854 117.022 48.1994 156.146 48.1994C195.27 48.1994 202.117 101.854 202.117 101.854C202.117 101.854 248.087 95.4154 245.153 75.0274C242.218 54.6381 186.467 25.6647 156.146 25.6647C125.825 25.6647 68.118 44.9807 67.1394 68.5887C66.162 92.1967 92.57 97.5621 106.263 101.854Z" fill="#F4CD9A"/>
+                                </g>
+                                <g id="g4225">
+                                    <path id="path4227" d="M31.6021 235.527C31.6021 235.527 3.56347 195.099 5.51947 159.235C7.47547 123.372 18.5115 107.071 18.5115 107.071C18.5115 107.071 -2.95653 152.063 31.6021 235.527" fill="#8C5E28"/>
+                                </g>
+                                <g id="g4249">
+                                    <path id="path4251" d="M278.31 234.527C278.31 234.527 306.349 194.099 304.393 158.235C302.437 122.372 291.401 106.071 291.401 106.071C291.401 106.071 312.869 151.063 278.31 234.527Z" fill="#8C5E28"/>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </section>
         <section id="skills" class="section">
-            <div class="skills">
-                <h1 class="subtopic">Skills</h1>
-                <i class="fa-brands fa-python fa-4x fa-fw"></i>
-                <i class="fa-brands fa-java fa-4x fa-fw"></i>
-                <i class="fa-brands fa-js fa-4x fa-fw"></i>
-                <i class="fa-brands fa-github fa-4x fa-fw"></i>
-                <i class="fa-brands fa-react fa-4x fa-fw"></i>
-                <i class="fa-brands fa-html5 fa-4x fa-fw"></i>
-                <img id="csharp-icon" src="img\csharp.svg" alt="C# Icon" width="32" height="32">
-            </div><!-- End skills-content -->
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <i class="fa-brands fa-python fa-2x"></i>
+                <i class="fa-brands fa-java fa-2x"></i>
+                <i class="fa-brands fa-js fa-2x"></i>
+                <i class="fa-brands fa-github fa-2x"></i>
+                <i class="fa-brands fa-react fa-2x"></i>
+                <i class="fa-brands fa-html5 fa-2x"></i>
+                <img src="img/csharp.svg" alt="C# Icon" class="csharp-icon">
+            </div>
         </section>
         <section id="certificates" class="section">
-            <h1 class="subtopic">Certificates</h1>
-            <div class="cert-content">
-                <div class="cert">
-                    <div>
-                        <ul class ="nav-list">
-                            <li class="nav-item">
-                            <a class="nav-link" href="img/CodepathCert.pdf"><h3>Codepath: Intermediate Cyber Security</h3></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://www.credly.com/badges/e624ec1b-ccfa-48f2-854e-3d929f044bba/linked_in?t=rz9yl1"><h3>CompTIA: Security+</h3></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <h2>Certificates</h2>
+            <ul class="cert-list">
+                <li><a href="img/CodepathCert.pdf" target="_blank">Codepath: Intermediate Cyber Security</a></li>
+                <li><a href="https://www.credly.com/badges/e624ec1b-ccfa-48f2-854e-3d929f044bba/linked_in?t=rz9yl1" target="_blank">CompTIA: Security+</a></li>
+            </ul>
         </section>
-        <!-- Projects -->
         <section id="projects" class="section">
-            <h1 class="subtopic">Projects</h1>
-            <div class="projects-content">
-                <div class="project">
-                    <h2>Furbo Camera Hack</h2>
-                    <p>
-                        <i>Hacked into my Furbo camera and gained root access </i><br>
-                        In this project, I used Burp Suite to find an exploit in my Furbo pet camera and was able to 
-                        use code injection to successfully gain root access to the device. This allowed me to execute commands
-                        from my terminal to view the live stream and perform functions like tossing a dog treat.
-                        <br><br>
-                        On the left, you can see a terminal running shell commands as a root user, and on the right, you can
-                        see the hacked live stream from the camera.
-                    </p>                  
-                    <div style="padding-bottom:15px">
-                        Furbo Code injection script:
-                        <a href="https://github.com/MattPlum/FurboHack">Check it out on Github!</a>
-                    </div>
-                    <button class="btn" type="button" onclick="changeVisibility('p2')">
-                        Preview
-                        <div id="p2" class="item">
-                            <!-- gif 2 -->
-                            <img class="gif" src="img/FurboCommands .gif" />                        
-                        </div>
-                    </button>
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Furbo Camera Hack</h3>
+                <p><i>Hacked into my Furbo camera and gained root access.</i> Used Burp Suite to find an exploit in my Furbo pet camera and was able to use code injection to successfully gain root access to the device. This allowed me to execute commands from my terminal to view the live stream and perform functions like tossing a dog treat.</p>
+                <a href="https://github.com/MattPlum/FurboHack" target="_blank">Check it out on Github!</a>
+                <div class="project-preview">
+                    <img src="img/FurboCommands .gif" alt="Furbo Hack Preview">
                 </div>
-                <div class="project">
-                    <h2>OpenAI Steganography</h2>
-                    <p>
-                        <i>Used OpenAi's DALL-E API to generate images for steganography encoding/decoding </i><br/>
-                        I Built a python app using Flask to allow a user to  enter a prompt to generate an image using
-                        DALL-E's API, or upload their own image and enter a secret message. The secret message will then
-                        be encoded into the image using LSB steganography and will be displayed next to the original image to ensure
-                        it is not discernable. Also has functionality for decoding a steganographic message with options for Caesar
-                        and Vigenere Cipher
-                    </p>
-                    <div style="padding-bottom:15px">
-                        Steganography Flask App:
-                        <a href="https://github.com/MattPlum/steganography">Check it out on Github!</a>
-                    </div>
-                    <button class="btn" type="button" onclick="changeVisibility('p3')">
-                        Preview
-                        <div id="p3" class="item">
-                            <!-- gif 3-->
-                            <img class="gif" src="img/Steganography.gif" />
-                        </div>
-                    </button>
+            </div>
+            <div class="project">
+                <h3>OpenAI Steganography</h3>
+                <p><i>Used OpenAi's DALL-E API to generate images for steganography encoding/decoding.</i> Built a python app using Flask to allow a user to enter a prompt to generate an image using DALL-E's API, or upload their own image and enter a secret message. The secret message will then be encoded into the image using LSB steganography and will be displayed next to the original image to ensure it is not discernable. Also has functionality for decoding a steganographic message with options for Caesar and Vigenere Cipher.</p>
+                <a href="https://github.com/MattPlum/steganography" target="_blank">Check it out on Github!</a>
+                <div class="project-preview">
+                    <img src="img/Steganography.gif" alt="Steganography Preview">
                 </div>
-                <div class="project">
-                    <h2>Platformer Game</h2>
-                    <p>
-                        <i>A short 2D platformer video game written in Java about the style of leadership I take 
-                        when I am in a team-oriented work enviorment. </i><br>       
-                        This opportunity was given to me by my 
-                        LEAD-100 professor who encouraged us to be different and submit something other than 
-                        the standard essay for our final paper. My choice was to write a game because learning 
-                        new techniques and developing my skills is what I enjoy most. 
-                    </p>
-                    <div style="padding-bottom:15px">
-                        Leadership Game:
-                        <a href="https://github.com/MattPlum/gamestest">Check it out on Github!</a>
-                    </div>
-                    <button class="btn" type="button" onclick="changeVisibility('p1')">
-                        Preview
-                        <div id="p1" class="item">
-                            <!--gif 1-->
-                            <img class="gif" src="img/lead_game_gif.gif" />
-                        </div>
-                    </button>
+            </div>
+            <div class="project">
+                <h3>Platformer Game</h3>
+                <p><i>A short 2D platformer video game written in Java about the style of leadership I take when I am in a team-oriented work environment.</i> This opportunity was given to me by my LEAD-100 professor who encouraged us to be different and submit something other than the standard essay for our final paper. My choice was to write a game because learning new techniques and developing my skills is what I enjoy most.</p>
+                <a href="https://github.com/MattPlum/gamestest" target="_blank">Check it out on Github!</a>
+                <div class="project-preview">
+                    <img src="img/lead_game_gif.gif" alt="Platformer Game Preview">
                 </div>
             </div>
         </section>
-        <!-- Footer -->
-        <footer id="contact" class="footer">
-            <h1 class=" subtopic">Contact Info</h1>
-            <div class="contact-list">
-                <ul>
-                    <li>
-                        <i class="fa fa-envelope-o fa-fw "> </i>
-                        <a href="mailto:mattdouglee@gmail.com">mattdouglee@gmail.com </a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="https://www.linkedin.com/in/mdlee12097/">
-                            <i class="fa fa-linkedin-square fa-3x fa-fw"></i>
-                        </a>
-                        <a href="https://github.com/MattPlum">
-                            <i class="fa fa-github-square fa-3x fa-fw"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div id="likebtn">
-                <!-- LikeBtn.com BEGIN -->
-                <span class="likebtn-wrapper" data-theme="sku" data-white_label="true" data-identifier="item_1" data-dislike_enabled="false"></span>
-                <script>(function (d, e, s) { if (d.getElementById("likebtn_wjs")) return; a = d.createElement(e); m = d.getElementsByTagName(e)[0]; a.async = 1; a.id = "likebtn_wjs"; a.src = s; m.parentNode.insertBefore(a, m) })(document, "script", "//w.likebtn.com/js/w/widget.js");</script>
-                <!-- LikeBtn.com END -->
-            </div>
-        </footer>
-
-    </form>
+        <section id="contact" class="section">
+            <h2>Contact Info</h2>
+            <ul class="contact-list">
+                <li><i class="fa fa-envelope"></i> <a href="mailto:mattdouglee@gmail.com">mattdouglee@gmail.com</a></li>
+                <li><a href="https://www.linkedin.com/in/mdlee12097/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="https://github.com/MattPlum" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 Matthew Lee. All rights reserved.</p>
+    </footer>
 </body>
 </html>
